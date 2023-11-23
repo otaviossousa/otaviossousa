@@ -1,6 +1,6 @@
 ### Wassup!
 <ul>
- <li>📖 ADS Studendt at Instituto Federal do Piauí.</li>
+ <li>📖 ADS Student at Instituto Federal do Piauí.</li>
  <li>💻 Tec lover.</li>
  <li>👾 Playing something.</li>
 </ul>
