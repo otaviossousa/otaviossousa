@@ -19,4 +19,6 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=otavio-sousa&show_icons=true&theme=dracula&locale=en" alt="otavio-sousa" /></p>
 
- ![Snake animation](https://github.com/Emilly-horta/otavio-sousa/blob/output/github-contribution-grid-snake.svg)
+https://github.com/otavio-sousa/otavio-sousa/blob/output/github-contribution-grid-snake.gif
+
+![snake gif](https://github.com/otavio-sousa/otavio-sousa/blob/output/github-contribution-grid-snake.gif)
