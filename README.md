@@ -22,4 +22,4 @@
 
 ![snake gif](https://github.com/otaviossousa/otaviossousa/blob/output/github-contribution-grid-snake.svg)
 
-[![readme](https://github-readme-stats.vercel.app/api/pin/?username=otaviossousa&repo=otaviossousa&theme=react)](https://github.com//otaviossousa/otaviossousa)
+
