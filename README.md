@@ -20,9 +20,4 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=otaviossousa&show_icons=true&theme=dracula&locale=en" alt="otavio-sousa" /></p>
 
 
-  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
-
-![snake gif](https://github.com/otaviossousa/otaviossousa/blob/output/github-contribution-grid-snake.svg)
-
-
+![snake gif](https://github.com/otaviossousa/otaviossousa/blob/output/github-contribution-grid-snake-dark.svg)
