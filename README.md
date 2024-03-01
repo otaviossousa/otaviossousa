@@ -21,4 +21,4 @@
 
 
 
-![snake gif](https://github.com/otaviossousa/otaviossousa/blob/output/github-contribution-grid-snake.gif)
+![snake gif](https://github.com/otaviossousa/otaviossousa/blob/output/github-contribution-grid-snake.svg)
