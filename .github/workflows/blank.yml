@@ -1,44 +1,114 @@
-name: generate animation
+name: main
 
-on:
-  # run automatically every 24 hours
-  schedule:
-    - cron: "0 */24 * * *" 
-  
-  # allows to manually run the job at any time
-  workflow_dispatch:
-  
-  # run on every push on the master branch
-  push:
-    branches:
-    - master
-    
-  
+on: [push]
 
 jobs:
-  generate:
-    permissions: 
-      contents: write
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-    
+
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - name: generate github-contribution-grid-snake.svg
-        uses: Platane/snk/svg-only@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          cache: yarn
+          node-version: 20
+      - run: yarn install --frozen-lockfile
+
+      - run: npm run type
+      - run: npm run lint
+      - run: npm run test --ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: update action.yml to use image from local Dockerfile
+        run: |
+          sed -i "s/image: .*/image: Dockerfile/" action.yml
+
+      - name: generate-snake-game-from-github-contribution-grid
+        id: generate-snake
+        uses: ./
+        with:
+          github_user_name: otaviossousa
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          
-          
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+            dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
+      - name: ensure the generated file exists
+        run: |
+          ls dist
+          test -f dist/github-contribution-grid-snake.svg
+          test -f dist/github-contribution-grid-snake-dark.svg
+          test -f dist/github-contribution-grid-snake.gif
+
+      - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  test-action-svg-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version: 20
+      - run: yarn install --frozen-lockfile
+
+      - name: build svg-only action
+        run: |
+          npm run build:action
+          rm -r svg-only/dist
+          mv packages/action/dist svg-only/dist
+
+      - name: generate-snake-game-from-github-contribution-grid
+        id: generate-snake
+        uses: ./svg-only
+        with:
+          github_user_name: platane
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: ensure the generated file exists
+        run: |
+          ls dist
+          test -f dist/github-contribution-grid-snake.svg
+          test -f dist/github-contribution-grid-snake-dark.svg
+
+      - uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output-svg-only
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy-ghpages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version: 20
+      - run: yarn install --frozen-lockfile
+
+      - run: npm run build:demo
+        env:
+          GITHUB_USER_CONTRIBUTION_API_ENDPOINT: https://snk-one.vercel.app/api/github-user-contribution/
+
+      - uses: crazy-max/ghaction-github-pages@v3.1.0
+        if: success() && github.ref == 'refs/heads/main'
+        with:
+          target_branch: gh-pages
+          build_dir: packages/demo/dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN_GH_PAGES }}
