@@ -19,4 +19,4 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=otaviossousa&show_icons=true&theme=dracula&locale=en" alt="otavio-sousa" /></p>
 
-![snake gif](https://github.com/your-user-name/your-user-name/blob/output/github-contribution-grid-snake-dark.svg)
+![snake gif](https://github.com/otaviossousa/otaviossousa/blob/output/github-contribution-grid-snake-dark.svg)
