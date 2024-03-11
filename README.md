@@ -37,7 +37,7 @@
       <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=otaviossousa&show_icons=true&theme=dracula&locale=en&layout=compact" alt="otavio-sousa" style="height: 200px;" />
     </picture>
   </div>
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <div style="display: inline-block; height: 100%;">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=otaviossousa&show_icons=true&theme=dracula&locale=en" />
