@@ -61,8 +61,8 @@
       <br>Django
     </td>
         <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Nodejs" />
-      <br>Nodejs
+        <img src="https://techstack-generator.vercel.app/aws-icon.svg" width="48" height="48" alt="Nodejs" />
+      <br>AWS
       </td>
       </td>          
  </tr>
