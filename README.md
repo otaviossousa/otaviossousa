@@ -45,11 +45,11 @@
       <br>Git
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/django-icon.svg" width="48" height="48" alt="MongoDB" />
+        <img src="https://techstack-generator.vercel.app/django-icon.svg" width="65" height="65" alt="Django" />
       <br>Django
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/aws-icon.svg" width="48" height="48" alt="Nodejs" />
+        <img src="https://techstack-generator.vercel.app/aws-icon.svg" width="65" height="65" alt="Nodejs" />
       <br>AWS
     </td>              
  </tr>
