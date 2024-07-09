@@ -48,23 +48,14 @@
         <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" height="65" alt="Git" />
       <br>Git
     </td>
-    <td align="center"  width="96">
-        <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
-      <br>HTML5
-    </td>
     <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=css" width="48" height="48" alt="css" />
-      <br>CSS
-    </td>
-      <td align="center" width="96">
         <img src="https://techstack-generator.vercel.app/django-icon.svg" width="48" height="48" alt="MongoDB" />
       <br>Django
     </td>
-        <td align="center" width="96">
+    <td align="center" width="96">
         <img src="https://techstack-generator.vercel.app/aws-icon.svg" width="48" height="48" alt="Nodejs" />
       <br>AWS
-      </td>
-      </td>          
+    </td>          
  </tr>
 </table>
 </div>
