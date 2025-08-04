@@ -1,7 +1,10 @@
-<h1 align="center">Hi 👋, I'm Otavio</h1>
-
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=otaviossousa&label=Profile%20views&color=0e75b6&style=flat" alt="otavio-sousa" /> </p>
-<h3 align="center">Developer in training, cybersecurity enthusiast from Brazil.</h3>
+
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&center=true&width=435&lines=Hi%2C+I'm+Otavio;I'm+from+Brazil;Currently+studying+at+IFPI;Developer+in+training;Cybersecurity+enthusiast" alt="Typing SVG" />
+  </a>
+</div>
 
 <h2 align="center">Connect with me:</h2>
 <p align="center">
@@ -57,24 +60,38 @@
 </table>
 </div>
 
-<div style="text-align: center;">
-  <div style="display: inline-block; height: 100%;">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs?username=otaviossousa&show_icons=true&theme=dracula&locale=en&layout=compact" />
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs?username=otaviossousa&show_icons=true&locale=en&layout=compact" />
-      <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=otaviossousa&show_icons=true&theme=dracula&locale=en&layout=compact" alt="otavio-sousa" style="height: 200px;" />
-    </picture>
-  </div>
 
-  <div style="display: inline-block; height: 100%;">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=otaviossousa&show_icons=true&theme=dracula&locale=en" />
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=otaviossousa&show_icons=true&locale=en" />
-      <img align="center" src="https://github-readme-stats.vercel.app/api?username=otaviossousa&show_icons=true&theme=dracula&locale=en" alt="otavio-sousa" style="height: 200px;" />
-    </picture>
-  </div>
+<div align="center">
+  <!-- Estatísticas gerais -->
+  <picture>
+    <!-- Modo escuro -->
+    <source media="(prefers-color-scheme: dark)" 
+      srcset="https://github-readme-stats.vercel.app/api?username=otaviossousa&theme=tokyonight&layout=compact&show_icons=true&count_private=true&hide_border=true&title_color=70a5fd&icon_color=70a5fd&text_color=c9d1d9&bg_color=0d1117">
+    <!-- Modo claro: defina um tema apropriado (exemplo 'default' ou outro de sua escolha) -->
+    <source media="(prefers-color-scheme: light)" 
+      srcset="https://github-readme-stats.vercel.app/api?username=otaviossousa&layout=compact&show_icons=true&count_private=true&hide_border=true&title_color=70a5fd&icon_color=70a5fd&text_color=c9d1d9&bg_color=ffffff">
+    <!-- Fallback -->
+    <img width="49%" height="auto" 
+      src="https://github-readme-stats.vercel.app/api?username=otaviossousa&theme=tokyonight&layout=compact&show_icons=true&count_private=true&hide_border=true&title_color=70a5fd&icon_color=70a5fd&text_color=c9d1d9&bg_color=0d1117" 
+      alt="Estatísticas do GitHub">
+  </picture>
+  
+  <!-- Top Langs -->
+  <picture>
+    <!-- Modo escuro -->
+    <source media="(prefers-color-scheme: dark)" 
+      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=otaviossousa&theme=tokyonight&layout=compact&langs_count=8&hide_border=true&title_color=70a5fd&text_color=c9d1d9&bg_color=0d1117&hide=Shaderlab,hlml,shell,.c#,Jupyter Notebook">
+    <!-- Modo claro -->
+    <source media="(prefers-color-scheme: light)" 
+      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=otaviossousa&layout=compact&langs_count=8&hide_border=true&title_color=70a5fd&text_color=c9d1d9&bg_color=ffffff&hide=Shaderlab,hlml,shell,.c#,Jupyter Notebook">
+    <!-- Fallback -->
+    <img width="37%" height="auto" 
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=otaviossousa&theme=tokyonight&layout=compact&langs_count=8&hide_border=true&title_color=70a5fd&text_color=c9d1d9&bg_color=0d1117&hide=Shaderlab,hlml,shell,.c#,Jupyter Notebook" 
+      alt="Linguagens mais usadas">
+  </picture>
 </div>
 
+<!-- ./GitHub Snake -->
 <div style="text-align: center;">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/otaviossousa/otaviossousa/blob/output/github-snake-dark.svg" />
@@ -82,4 +99,3 @@
     <img alt="github-snake" src="https://github.com/otaviossousa/otaviossousa/blob/output/ocean.gif" />
   </picture>
 </div>
-
