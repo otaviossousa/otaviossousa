@@ -12,6 +12,12 @@ otavio@github:~$ whoami
 &nbsp;
 <a href="https://otaviossousa.pythonanywhere.com/"><img src="https://img.shields.io/badge/portf%C3%B3lio-otaviossousa.pythonanywhere.com-0a0d12?style=flat&labelColor=0a0d12&color=5fd9c9" alt="portfólio"/></a>
 
+
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white)](https://wa.me/5586981882995)
+[![Email](https://img.shields.io/badge/Email-e881b0?style=flat&logo=gmail&logoColor=white)](mailto:otaviobrunosousamartins@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/otaviossousa/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/otaviossousa)
+
 </div>
 
 
@@ -41,17 +47,6 @@ otavio@github:~$ cat skills.json
 <br>
 
 <div align="center">
-
-```
-otavio@github:~$ sendmail --to otavio
-```
-
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white)](https://wa.me/5586981882995)
-[![Email](https://img.shields.io/badge/Email-e881b0?style=flat&logo=gmail&logoColor=white)](mailto:otaviobrunosousamartins@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/otaviossousa/)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/otaviossousa)
-
-</div>
 
 <br>
 
